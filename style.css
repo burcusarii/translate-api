@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0B2447;
+}
+
+.translate-area {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto;
+}
+
+#translate-btn {
+    grid-column: 1 / span 2;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #576CBC;
+    color: #fff;
+    font-size: 25px;
+}
+
+#input-text, #output-text {
+    width: 400px;
+    height: 250px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+}
+
