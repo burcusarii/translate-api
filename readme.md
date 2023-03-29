@@ -1,3 +1,3 @@
 # Translate Uygulaması
 
-#### ücretsiz olan https://api.mymemory.translated.net/get?q=Hello World!&langpair=en|it api ile translate uygulaması yapılmıştır.
+#### ücretsiz olan [Memory API](https://mymemory.translated.net/doc/spec.php) ile translate uygulaması yapılmıştır.
