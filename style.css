@@ -39,3 +39,8 @@
     font-size: 20px;
 }
 
+
+#output-text:disabled {
+    background-color: #fff;
+    color: #000;
+}
