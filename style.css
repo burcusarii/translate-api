@@ -10,7 +10,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #0B2447;
+    background-color: #576CBC;
     flex-direction: column;
 }
 
@@ -26,13 +26,17 @@
     padding: 10px;
     border: none;
     border-radius: 10px;
-    background-color: #576CBC;
+    background-color: #262A56;
     color: #fff;
     font-size: 25px;
 }
 
+#translate-btn:active {
+    transform: scale(0.98);
+}
+
 #input-text, #output-text {
-    width: 400px;
+    width: 600px;
     height: 250px;
     border: none;
     outline: none;

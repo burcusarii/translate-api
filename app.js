@@ -25,6 +25,24 @@ const options = {
 	}
 };
 
+
+fetch("language.json")
+.then(response => response.json())
+.then(data => {
+    const language = data[0];
+    for(let key in language){
+        text_to.innerHTML += `<option value="${key}">${language[key]}</option>`;
+        text_from.innerHTML += `<option value="${key}">${language[key]}</option>`;
+
+        console.log(key);
+        console.log(language[key]);
+    }
+
+
+    
+})
+.catch(err => console.log(err))
+
 translate_btn.addEventListener("click", function() {
     let url = `https://nlp-translation.p.rapidapi.com/v1/translate?text=${input_text.value}&to=${text_to.value}&from=${text_from.value}`
 
