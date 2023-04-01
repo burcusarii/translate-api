@@ -11,6 +11,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #0B2447;
+    flex-direction: column;
 }
 
 .translate-area {
@@ -37,10 +38,37 @@
     outline: none;
     padding: 20px;
     font-size: 20px;
+    resize: none;
 }
 
 
 #output-text:disabled {
     background-color: #fff;
     color: #000;
+}
+
+
+.translate-option {
+    display: flex;
+    width: 50%;
+    /* background-color: #fff; */
+    margin: 5px;
+    padding: 20px;
+    width: 820px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#text-from, #text-to {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #0B2447;
+}
+
+.fa-arrow-right {
+    font-size: 25px;
+    margin: 0 20px;
+    color: #fff;
 }

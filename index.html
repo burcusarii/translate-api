@@ -5,15 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Translate APP</title>
 </head>
 <body>
     <div class="container">
-        <div class="translate-area">
+
+    <div class="translate-option">  
+        <form>
+            <select name="" id="text-from">
+                <option value="tr">Türkçe</option>
+                <option value="en">İngilizce</option>
+            </select>
+        </form>
+        <i class="fa-solid fa-arrow-right"></i>
+        <form>
+            <select name="" id="text-to">
+                <option value="tr">Türkçe</option>
+                <option value="en">İngilizce</option>
+            </select>
+        </form>
+    </div>
+      
+    <div class="translate-area">
             <textarea id="input-text"></textarea>
             <textarea id="output-text" disabled></textarea>
             <button id="translate-btn">Translate</button>
-        </div>
+    </div>
        
     </div>
     
