@@ -16,7 +16,6 @@
 
 .translate-area {
     display: grid;
-    gap: 5px;
     grid-template-columns: auto auto;
 }
 
@@ -29,8 +28,14 @@
     background-color: #262A56;
     color: #fff;
     font-size: 25px;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+    
 
+#translate-btn:hover {
+    background-color: #474c86;
+}
 #translate-btn:active {
     transform: scale(0.98);
 }
@@ -41,8 +46,15 @@
     border: none;
     outline: none;
     padding: 20px;
-    font-size: 20px;
+    font-size: 25px;
     resize: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+
+}
+
+#input-text {
+    border-right: 1px solid #888;
 }
 
 
@@ -65,10 +77,13 @@
 
 
 #text-from, #text-to {
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     font-size: 20px;
     color: #0B2447;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid #262A56;
+
 }
 
 .fa-arrow-right {
